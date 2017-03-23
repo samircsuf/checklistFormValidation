@@ -11,7 +11,7 @@
       console.log(str);
       return result;
     }*/
-
+    //creates order and can be accessed by external modules
     Truck.prototype.createOrder = function(order) {
         console.log('Adding order for ' + order.emailAddress);
         this.db.add(order.emailAddress, order); //truck module doesnt need to know about 'add' method', exposed by datastore.js
